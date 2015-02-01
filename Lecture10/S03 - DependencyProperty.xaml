@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="MyControls2.ColorBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:MyControls2"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Orientation="Horizontal">
+        <Rectangle Width="30">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{Binding RelativeSource={RelativeSource AncestorType=my:ColorBox}, Path=Color}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=my:ColorBox}, Path=Color.R}"/>
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=my:ColorBox}, Path=Color.G}"/>
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=my:ColorBox}, Path=Color.B}"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

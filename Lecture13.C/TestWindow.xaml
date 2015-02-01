@@ -1,0 +1,13 @@
+﻿<Window x:Class="Lecture13.C.TestWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="UI Automation Test Window" SizeToContent="WidthAndHeight">
+    <StackPanel>
+        <Label>Source</Label>
+        <TextBox Name="source"/>
+        <Label>Incremented</Label>
+        <TextBox Name="incremented"/>
+        <Button Name="button" Click="Button_Click">GetSum</Button>
+    </StackPanel>
+       
+</Window>

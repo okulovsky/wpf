@@ -1,0 +1,17 @@
+﻿<Window x:Class="L2S04"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="L2S04" Height="300" Width="300">
+    <Window.Resources>
+        <Style x:Key="baseStyle">
+            <Setter Property="Control.Background" Value="DarkGray"/>
+        </Style>
+        <Style x:Key="inheritedStyle" BasedOn="{StaticResource baseStyle}">
+            <Setter Property="Control.Foreground" Value="White"/>
+        </Style>
+     </Window.Resources>
+    <StackPanel>
+        <Label Style="{StaticResource baseStyle}">Base style</Label>
+        <Label Style="{StaticResource inheritedStyle}">Inherited style</Label>
+    </StackPanel>
+</Window>

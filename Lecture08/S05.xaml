@@ -1,0 +1,17 @@
+﻿<Window x:Class="L3S05"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="L3S05" Height="300" Width="300">
+    <FlowDocument>
+        <Paragraph>Гражданин
+            <InlineUIContainer>
+                <TextBlock Text="{Binding Client}"/>
+            </InlineUIContainer>
+                и
+            <InlineUIContainer>
+                <TextBlock Text="{Binding Manager}"/>
+            </InlineUIContainer>, 
+            действующий на основании Устава, заключили договор о нижеследующем:
+        </Paragraph>
+    </FlowDocument>
+</Window>

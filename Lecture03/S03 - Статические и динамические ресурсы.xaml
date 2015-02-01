@@ -1,0 +1,14 @@
+﻿<Window x:Class="S03"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="L1S03" SizeToContent="Height" Width="300">
+    <Window.Resources>
+        <SolidColorBrush x:Key="brush" Color="LightBlue" />
+    </Window.Resources>
+    <StackPanel>
+        <Label Background="{StaticResource brush}">Статический ресурс</Label>
+        <Label Background="{DynamicResource brush}">Динамический ресурс</Label>
+        <Button Content="Меняем статический ресурс" Click="Static_Click"/>
+        <Button Content="Меняем динамический ресурс" Click="Dynamic_Click"/>
+    </StackPanel>
+</Window>
